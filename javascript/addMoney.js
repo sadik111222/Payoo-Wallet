@@ -11,7 +11,7 @@ document.getElementById("add-money-btn").addEventListener("click", function(){
     const inputMoney = addMoneyInput.value;
     console.log(inputMoney)
 
-    if(accountNumber == "01234567890" && pin == "1234" && inputMoney ==""){
+    if(accountNumber == "01234567890" && pin == "1234"){
         alert("Add money success");
 
         // window.location.replace("/home.html")
@@ -22,3 +22,22 @@ document.getElementById("add-money-btn").addEventListener("click", function(){
 
 
 })
+
+let balance = 5000;
+document.getElementById("add-money-btn").addEventListener("click", function(){
+
+    const amount = parseFloat(document.getElementById("add-amount").value);
+
+    if(isNaN(amount) || amount <= 0){
+        alert("Enter valid amount");
+        return;
+    }
+
+    balance += amount;
+
+    document.getElementById("balance").innerText = "$" + balance;
+
+    alert("Money added successfully");
+});
+
+

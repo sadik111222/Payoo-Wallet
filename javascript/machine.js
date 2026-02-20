@@ -15,3 +15,7 @@ function showOnly(id){
     selected.classList.remove("hidden")
 
 }
+document.getElementById("logout-btn").addEventListener("click", function () {
+    // window.location.href = "./index.html";
+    window.location.assign("./index.html")
+});
