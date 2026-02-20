@@ -104,32 +104,105 @@
                 
             </div>
         </section>
-        <section class="flex flex-col items-center ">
+        <section class="flex flex-col items-center py-4">
             <h3 class="text-2xl">Add Money</h3>
-            <div>
+            <div class="py-4">
                 <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4 rounded-2xl">
                     <label class="label">Select A Bank</label>
                     <select class="select text- rounded-full">
-                        <option disabled selected>Pick a browser</option>
-                        <option>Chrome</option>
-                        <option>FireFox</option>
-                        <option>Safari</option>
+                        <option disabled selected>Pick A Bank</option>
+                        <option>Islami bank</option>
+                        <option>Janota bank</option>
+                        <option>Gramin bank</option>
                     </select>
                     
                     <label class="label">Bank Account Number</label>
-                    <input type="text" class="input rounded-full" placeholder="Enter account number" />
+                    <input id="input-account-number" type="text" class="input rounded-full" placeholder="Enter account number" />
 
                     <label class="label">Amount to Add</label>
-                    <input type="text" class="input rounded-full" placeholder="Add Amount to withdraw" />
+                    <input id="add-money" type="text" class="input rounded-full" placeholder="Add Amount to withdraw" />
 
                     <label class="label">Pin Number</label>
-                    <input type="password" class="input rounded-full" placeholder="Enter your pin number" />
+                    <input id="account-pin" type="password" class="input rounded-full" placeholder="Enter your pin number" />
 
-                    <button class="btn btn-neutral mt-4 rounded-full">Add Money</button>
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                </fieldset>
+            </div>
+        </section>
+        <section class="flex flex-col items-center py-4">
+            <h3 class="text-2xl">Cash Out</h3>
+            <div class="py-4">
+                <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4 rounded-2xl">                 
+                    
+                    <label class="label">Agent Number</label>
+                    <input id="input-account-number" type="text" class="input rounded-full" placeholder="Enter 11 digit number" />
+
+                    <label class="label">Amount</label>
+                    <input id="add-money" type="text" class="input rounded-full" placeholder="Enter amount" />
+
+                    <label class="label">Pin Number</label>
+                    <input id="account-pin" type="password" class="input rounded-full" placeholder="Enter your pin number" />
+
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+                </fieldset>
+            </div>
+        </section>
+        <section class="flex flex-col items-center py-4">
+            <h3 class="text-2xl">Transfer Money</h3>
+            <div class="py-4">
+                <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4 rounded-2xl">
+                    
+                    <label class="label">User Account Numberr</label>
+                    <input id="input-account-number" type="text" class="input rounded-full" placeholder="Enter account number" />
+
+                    <label class="label">Amount</label>
+                    <input id="add-money" type="text" class="input rounded-full" placeholder="Enter transfer amount" />
+
+                    <label class="label">Pin Number</label>
+                    <input id="account-pin" type="password" class="input rounded-full" placeholder="Enter your pin" />
+
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+                </fieldset>
+            </div>
+        </section>
+              <section class="flex flex-col items-center py-4">
+            <h3 class="text-2xl">Get Bonus</h3>
+            <div class="py-4">
+                <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4 rounded-2xl">
+
+                    <label class="label">Bonus Coupon</label>
+                    <input id="account-pin" type="password" class="input rounded-full" placeholder="Enter your coupon" />
+
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
+                </fieldset>
+            </div>
+        </section>
+        <section class="flex flex-col items-center py-4">
+            <h3 class="text-2xl">Pay Bill</h3>
+            <div class="py-4">
+                <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4 rounded-2xl">
+                    <label class="label">Select To Pay</label>
+                    <select class="select text- rounded-full">
+                        <option disabled selected>Select back</option>
+                        <option>Islami bank</option>
+                        <option>Janota bank</option>
+                        <option>Gramin bank</option>
+                    </select>
+                    
+                    <label class="label">Biller Account Number</label>
+                    <input id="input-account-number" type="text" class="input rounded-full" placeholder="Enter account number" />
+
+                    <label class="label">Amount to Pay</label>
+                    <input id="add-money" type="text" class="input rounded-full" placeholder="Add Amount to pay" />
+
+                    <label class="label">Pin Number</label>
+                    <input id="account-pin" type="password" class="input rounded-full" placeholder="Enter your pin number" />
+
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
                 </fieldset>
             </div>
         </section>
     </main>
-   
+   <script src="./javascript/addMoney.js"></script>
 </body>
 </html>
