@@ -11,8 +11,8 @@ document.getElementById("add-money-btn").addEventListener("click", function(){
     const inputMoney = addMoneyInput.value;
     console.log(inputMoney)
 
-    if(accountNumber == "01234567890" && pin == "1234" && inputMoney >="10"){
-        alert("login success");
+    if(accountNumber == "01234567890" && pin == "1234" && inputMoney ==""){
+        alert("Add money success");
 
         // window.location.replace("/home.html")
         // window.location.assign("./home.html")
